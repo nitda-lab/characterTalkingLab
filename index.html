@@ -9,11 +9,27 @@
   <body>
     <div class="image-container">
         <img src="ふきだし.png" alt="ふきだし画像">
-        <div class="overlay-text">このテキストがうんちの上に表示されます</div>
+        <div class="overlay-text"><p id="message"></p></div>
     </div>
+
+    
+      
 
     <div class="image-character">
         <img src="うんちくん.png" alt="おぱんちゅうさぎ">
     </div>
+    <input type="text" name="message" id="msgBox" required />
+    <input type="submit" id = "talkButton" value="話させる">
+  
+    <script>
+      function butotnClick(){
+  message.innerText = msg.value;
+}
+
+      let msg = document.getElementById('msgBox');
+      console.log(msg.value);
+      let checkButton = document.getElementById('talkButton');
+      checkButton.addEventListener('click', butotnClick);
+    </script>
   </body>
 </html>

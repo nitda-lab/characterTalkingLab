@@ -1,0 +1,34 @@
+/* /https://zero-plus.io/media/css-position-absolute// */
+body{
+    background-color: gray;
+}
+
+.image-container {
+    position: relative;
+    display: inline-block;
+}
+
+.image-container img {
+    display: block;
+    width: 100%; /* 必要に応じてサイズを調整 */
+    height: 1%;
+}
+
+.image-container .overlay-text {
+    position: absolute; 
+    top: 50%; 
+    left: 50%;
+    transform: translate(-50%, -50%); 
+    color: black; 
+    font-size: 20px; 
+    /* /background-color: rgba(0, 0, 0, 0.5); 半透明の背景色 */
+    /* /padding: 10px; /* パディングを追加 /
+    /border-radius: 5px; /* 角を丸くする / */
+}
+
+.image-character{
+    display: block;
+    width: 50%; 
+    height: auto;
+    transform: translateX(20%);
+}
